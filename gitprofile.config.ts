@@ -219,7 +219,7 @@ const CONFIG = {
       '--rounded-btn': '3px',
     },
   },
-  footer: 'Made with GitProfile — Pratham Shah 2026',
+  footer: 'Made with GitProfile — Pratham   Shah 2026',
   enablePWA: true,
 };
 
