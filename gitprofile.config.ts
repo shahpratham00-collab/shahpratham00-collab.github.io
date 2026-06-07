@@ -1,183 +1,180 @@
-// gitprofile.config.ts
-
 const CONFIG = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (This is the only required config)
+    username: 'shahpratham00-collab',
   },
-  /**
-   * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
-   * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
-   * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
-   */
-  base: '/gitprofile/',
+  base: '/',
   projects: {
     github: {
-      display: true, // Display GitHub projects?
-      header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
+      display: true,
+      header: 'Projects',
+      mode: 'automatic',
       automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 8, // How many projects to display.
+        sortBy: 'updated',
+        limit: 8,
         exclude: {
-          forks: false, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          forks: false,
+          projects: [],
         },
-      },
-      manual: {
-        // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
-      header: 'My Projects',
-      // To hide the `External Projects` section, keep it empty.
+      header: 'Live Deployments',
       projects: [
         {
-          title: 'Project Name',
+          title: 'RAG Job Application Assistant',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'Production RAG system using LangChain, Llama3, FAISS and Streamlit. Deployed live on Streamlit Cloud.',
+          imageUrl: '',
+          link: 'https://rag-job-application-assistant-snwzr5zwdf8throdarxizd.streamlit.app/',
         },
         {
-          title: 'Project Name',
+          title: 'NLP Sentiment Analyser — DistilBERT',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'DistilBERT fine-tuned on SST-2, benchmarked against LR and SVM baselines. Live on Streamlit Cloud.',
+          imageUrl: '',
+          link: 'https://sentiment-analyser-nlp-m5wbhmnnfoijsvapc24zft.streamlit.app/',
+        },
+        {
+          title: 'Industrial Defect Detection CNN',
+          description:
+            'Deep CNN achieving 95.28% accuracy on steel surface defect classification. ONNX deployed.',
+          imageUrl: '',
+          link: 'https://defect-detection-cnn-cykjxqqen4gqptgmeequad.streamlit.app/',
         },
       ],
     },
   },
-  seo: { title: 'Portfolio of Ariful Alam', description: '', imageURL: '' },
+  seo: {
+    title: 'Pratham Shah — ML Engineer Portfolio',
+    description:
+      'MSc AI & Data Science student at NTU. 7 AI/ML projects built and deployed. Seeking ML Engineer roles in the UK.',
+    imageURL: '',
+  },
   social: {
-    linkedin: 'ariful-alam',
-    x: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: 'prathamshah16',
+    twitter: '',
+    mastodon: '',
     researchGate: '',
     facebook: '',
     instagram: '',
     reddit: '',
     threads: '',
-    youtube: '', // example: 'pewdiepie'
+    youtube: '',
     udemy: '',
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
-    stackoverflow: '', // example: '1/jeff-atwood'
-    discord: '',
+    medium: '',
+    dev: '',
+    stackoverflow: '',
+    skype: '',
     telegram: '',
-    website: 'https://www.arifszn.com',
+    website: '',
     phone: '',
-    email: '',
+    email: 'prathamshah1516@gmail.com',
   },
   resume: {
-    fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: '',
   },
   skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
-    'Git',
+    'Python',
+    'Machine Learning',
+    'Deep Learning',
+    'NLP',
+    'LangChain',
+    'RAG',
+    'TensorFlow',
+    'PyTorch',
+    'HuggingFace',
+    'Scikit-learn',
+    'XGBoost',
+    'FAISS',
+    'Apache Kafka',
+    'Apache Spark',
+    'AWS',
     'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
+    'SQL',
+    'Streamlit',
+    'Gradio',
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
+      company: 'Viacom18 Media Private Limited',
+      position: 'Data & Systems Analyst Intern',
+      from: 'December 2022',
+      to: 'June 2024',
+      companyLink: '',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'Pantech Solutions',
+      position: 'Data & IoT Analyst Intern',
+      from: 'January 2022',
+      to: 'June 2022',
+      companyLink: '',
+    },
+    {
+      company: 'E-Yantra Lab — IIT Bombay',
+      position: 'Research & Embedded Systems Intern',
+      from: 'August 2021',
+      to: 'September 2021',
+      companyLink: '',
     },
   ],
   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
+      name: 'Google Cloud Professional Developer',
+      body: 'Google',
+      year: '2022',
+      link: '',
+    },
+    {
+      name: 'SQL Bootcamp with MySQL, PHP & Python',
+      body: 'Udemy',
+      year: '2021',
+      link: '',
+    },
+    {
+      name: 'Google Data Studio / Looker Studio A-Z',
+      body: 'Google',
+      year: '2022',
+      link: '',
+    },
+    {
+      name: 'The Data Science Course',
+      body: 'Udemy',
+      year: '2020',
+      link: '',
     },
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'Nottingham Trent University',
+      degree: 'MSc Artificial Intelligence & Data Science',
+      from: '2025',
+      to: 'Present',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'University of Mumbai',
+      degree: 'B.E. Electronics & Telecommunication Engineering',
+      from: '2021',
+      to: '2024',
     },
   ],
-  publications: [
-    {
-      title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-  ],
-  // Display articles from your medium or dev account. (Optional)
+  publications: [],
   blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many articles to display. Max is 10.
+    display: false,
   },
   googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
+    id: '',
   },
-  // Track visitor interaction and behavior. https://www.hotjar.com
-  hotjar: { id: '', snippetVersion: 6 },
+  hotjar: {
+    id: '',
+    snippetVersion: 6,
+  },
   themeConfig: {
-    defaultTheme: 'lofi',
-
-    // Hides the switch in the navbar
-    // Useful if you want to support a single color mode
+    defaultTheme: 'dark',
     disableSwitch: false,
-
-    // Should use the prefers-color-scheme media-query,
-    // using user system preferences, instead of the hardcoded defaultTheme
     respectPrefersColorScheme: false,
-
-    // Display the ring in Profile picture
     displayAvatarRing: true,
-
-    // Available themes. To remove any theme, exclude from here.
     themes: [
       'light',
       'dark',
@@ -211,20 +208,18 @@ const CONFIG = {
       'dim',
       'nord',
       'sunset',
-      'caramellatte',
-      'abyss',
-      'silk',
-      'procyon',
     ],
+    customTheme: {
+      primary: '#1d9e75',
+      secondary: '#378add',
+      accent: '#37cdbe',
+      neutral: '#0a0f1e',
+      'base-100': '#0a0f1e',
+      '--rounded-box': '3px',
+      '--rounded-btn': '3px',
+    },
   },
-
-  // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a> and ❤️`,
-
+  footer: 'Made with GitProfile — Pratham Shah 2026',
   enablePWA: true,
 };
 
